@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC3C023E-9854-44AE-BCE8-BC21F9F58BB2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Debug_Compiler</RootNamespace>
+    <AssemblyName>Debug Compiler</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>DebugCompiler.Root</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="External">
+      <HintPath>..\..\..\..\Desktop\T7&amp;T8 Serious PS4\t7-compiler-master\External\bin\Debug\External.dll</HintPath>
+    </Reference>
+    <Reference Include="Iced">
+      <HintPath>..\..\..\..\Desktop\T7&amp;T8 Serious PS4\t7-compiler-master\External\bin\Debug\Iced.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\..\..\Desktop\T7&amp;T8 Serious PS4\t7-compiler-master\TreyarchCompiler\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Irony">
+      <HintPath>..\..\..\..\Desktop\T7&amp;T8 Serious PS4\t7-compiler-master\External\bin\Debug\Irony.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\T7&amp;T8 Serious PS4\t7-compiler-master\External\bin\Debug\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\T7&amp;T8 Serious PS4\t7-compiler-master\External\bin\Debug\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\T7&amp;T8 Serious PS4\t7-compiler-master\External\bin\Debug\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\T7&amp;T8 Serious PS4\t7-compiler-master\External\bin\Debug\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Metadata, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\T7&amp;T8 Serious PS4\t7-compiler-master\External\bin\Debug\System.Reflection.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\T7&amp;T8 Serious PS4\t7-compiler-master\External\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="T89CompilerLib">
+      <HintPath>..\..\T89CompilerLib\T89CompilerLib\bin\Release\T89CompilerLib.dll</HintPath>
+    </Reference>
+    <Reference Include="xdevkit">
+      <HintPath>..\..\..\..\Desktop\T7&amp;T8 Serious PS4\t7-compiler-master\DebugCompiler\xdevkit.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseSyntax.cs" />
+    <Compile Include="BLOPSCompiler.cs" />
+    <Compile Include="BO2Syntax.cs" />
+    <Compile Include="BO3Syntax.cs" />
+    <Compile Include="CompiledCode.cs" />
+    <Compile Include="Compiler.cs" />
+    <Compile Include="ConditionalBlocks.cs" />
+    <Compile Include="CRC32.cs" />
+    <Compile Include="DecData.cs" />
+    <Compile Include="EndianIO.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="FunctionDefinitions.cs" />
+    <Compile Include="Games.cs" />
+    <Compile Include="GSCCompiler.cs" />
+    <Compile Include="ICompiler.cs" />
+    <Compile Include="Keys.cs" />
+    <Compile Include="Masks.cs" />
+    <Compile Include="Modes.cs" />
+    <Compile Include="NewSyntax.cs" />
+    <Compile Include="Platforms.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Root.cs" />
+    <Compile Include="System.Windows.Forms.cs" />
+    <Compile Include="T6StringFixups.cs" />
+    <Compile Include="T7DebugTableSection.cs" />
+    <Compile Include="T7ExportsSection.cs" />
+    <Compile Include="T7ImportSection.cs" />
+    <Compile Include="T7IncludesSection.cs" />
+    <Compile Include="T7NameSection.cs" />
+    <Compile Include="T7OpCode.cs" />
+    <Compile Include="T7OP_AbstractCall.cs" />
+    <Compile Include="T7OP_Call.cs" />
+    <Compile Include="T7OP_CallPtr.cs" />
+    <Compile Include="T7OP_EvalFieldVariable.cs" />
+    <Compile Include="T7OP_GetFuncPtr.cs" />
+    <Compile Include="T7OP_GetHash.cs" />
+    <Compile Include="T7OP_GetLocal.cs" />
+    <Compile Include="T7OP_GetLocalFunction.cs" />
+    <Compile Include="T7OP_GetNumericValue.cs" />
+    <Compile Include="T7OP_GetString.cs" />
+    <Compile Include="T7OP_Jump.cs" />
+    <Compile Include="T7OP_LazyGetFunction.cs" />
+    <Compile Include="T7OP_Return.cs" />
+    <Compile Include="T7OP_SafeCreateLocalVariables.cs" />
+    <Compile Include="T7ScriptHeader.cs" />
+    <Compile Include="T7ScriptObject.cs" />
+    <Compile Include="T7ScriptSection.cs" />
+    <Compile Include="T7StringFixupsSection.cs" />
+    <Compile Include="T7StringTableSection.cs" />
+    <Compile Include="T89ExportsSection.cs" />
+    <Compile Include="T89GlobalObjectsSection.cs" />
+    <Compile Include="T89ImportSection.cs" />
+    <Compile Include="T89IncludesSection.cs" />
+    <Compile Include="T89OpCode.cs" />
+    <Compile Include="T89OP_AbstractCall.cs" />
+    <Compile Include="T89OP_Call.cs" />
+    <Compile Include="T89OP_CallPtr.cs" />
+    <Compile Include="T89OP_EvalFieldVariable.cs" />
+    <Compile Include="T89OP_GetFuncPtr.cs" />
+    <Compile Include="T89OP_GetGlobal.cs" />
+    <Compile Include="T89OP_GetHash.cs" />
+    <Compile Include="T89OP_GetLocal.cs" />
+    <Compile Include="T89OP_GetNumericValue.cs" />
+    <Compile Include="T89OP_GetString.cs" />
+    <Compile Include="T89OP_Jump.cs" />
+    <Compile Include="T89OP_Notification.cs" />
+    <Compile Include="T89OP_Return.cs" />
+    <Compile Include="T89OP_SafeCreateLocalVariables.cs" />
+    <Compile Include="T89OP_SafeSetVFC.cs" />
+    <Compile Include="T89OP_SetLocal.cs" />
+    <Compile Include="T89OP_SetVariableFieldRef.cs" />
+    <Compile Include="T89ScriptHeader.cs" />
+    <Compile Include="T89ScriptObject.cs" />
+    <Compile Include="T89ScriptSection.cs" />
+    <Compile Include="T89StringTableSection.cs" />
+    <Compile Include="T8Compiler.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="Utility.cs" />
+    <Compile Include="Utility2.cs" />
+    <Compile Include="WarningsData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="T7PCV2.db" />
+    <None Include="vm_codes.db2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="T89CompilerLib\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
